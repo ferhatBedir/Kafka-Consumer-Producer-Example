@@ -20,7 +20,7 @@ Kafka basic consumer - producer example
     
      <a href="https://www.tutorialkart.com/apache-kafka/install-apache-kafka-on-mac/"> For Detail </a>
      
-     <a href="https://www.apache.org/dyn/closer.cgi?path=/kafka/2.3.0/kafka_2.12-2.3.0.tgz"> Download Link </a>
+     <a href="https://www-eu.apache.org/dist/kafka/"> Download Link </a>
      
   
   * The application.yml file is below. If your setting are different, change from the application.yml file.
