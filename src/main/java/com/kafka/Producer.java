@@ -3,18 +3,23 @@ package com.kafka;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 
-@Service
+@Component
 public class Producer {
 
+    private KafkaTemplate kafkaTemplate;
 
     @Autowired
-    private KafkaTemplate<String, String> kafkaTemplate;
+    public Producer(KafkaTemplate kafkaTemplate) {
+        this.kafkaTemplate = kafkaTemplate;
+    }
+
 
     public void sendMessage(String topic, String message) {
         kafkaTemplate.send(topic, message);
     }
+
 
 }
